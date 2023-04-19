@@ -1,0 +1,121 @@
+@font-face{
+  font-family: Funera;
+  src: url("/fonts/MCFfunera.ttf");
+}
+
+/* body, html{
+    height: 100%;
+} */
+
+body{
+    background-color: rgb(20, 20, 20);
+    background-image: url(/imagenes/Klinger.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:center;
+    background
+}
+
+.navbar{
+    opacity: 0.5;
+}
+
+.nav-link{
+    color: white;
+}
+
+a{
+  font-family: Funera, serif;
+  font-size: 98px;
+}
+
+h1{
+    font-size: 30px;
+    color: whitesmoke;
+    }
+
+h2{
+    font-size: 20px;
+    }
+
+/* .form{
+    width: 50%;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid;
+} */
+
+.formulario_sombra{
+    background-color: var(--grisclaro);
+    width: min(40rem, 45%);
+    margin: 0 auto;
+    padding: 5rem;
+    /* opacity: 0.8; */
+  }
+
+  .formulario fieldset {
+    border: none;
+  
+  }
+  
+  .formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+    
+  }
+
+  .campos {
+    margin-bottom: 1rem;
+    color: rgb(252, 242, 228);
+  
+  }
+
+  .campos label {
+    color: var(--blanco);
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    display: block;
+  
+  }
+
+  .campos textarea {
+    height: 10rem;
+  }
+
+  .input-text {
+    width: 90%;
+    height: 2rem;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    resize: none;
+    background-color: rgba(77, 77, 77, 0.456);
+  }
+
+  .redsocial i {
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 33.3%;
+    border: 1px solid;
+    font-size: 2rem;
+    transition: all 0.7s;
+}
+
+.redsocial i:hover {
+    color: white;
+    background-color: black;
+}
+
+#copyright {
+    color: grey;
+}

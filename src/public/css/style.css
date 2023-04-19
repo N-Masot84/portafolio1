@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+@font-face{
+    font-family: Funera;
+    src: url("../fonts/MCFfunera.ttf");
+}
+
+@font-face{
+    font-family: Wretched;
+    src: url("../fonts/WRETRG_.TTF");
+}
+
+/* body, html{
+    height: 100%;
+    
+} */
+
+body{
+    background-color: black;
+    margin-left: 1px;
+    margin-right: 1px;
+
+}
+
+.bgindex{
+    width: 100%;
+}
+
+.navbar{
+    opacity: 0.5;   
+}
+
+.nav-link{
+    color: white;
+}
+
+a{
+    font-family: Funera, serif;
+    font-size: 98px;
+    
+}
+
+h1{
+    font-family: Wretched, serif;
+    font-size: 40px;
+    color: whitesmoke;
+
+    }
+
+h2{
+    font-size: 20px;
+    }
+
+.contenedor{
+    width: 100%;   
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-top: 70px;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    
+       
+}
+
+#articulos{
+    opacity: 0.65;
+}
+
+/* iframe {
+    opacity: 0.5;
+} */
+
+.redsocial i {
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 33.3%;
+    border: 1px solid;
+    font-size: 2rem;
+    transition: all 0.7s;
+}
+
+.redsocial i:hover {
+    color: rgb(153, 66, 38);
+    background-color: black;
+}
+
+#copyright {
+    color: rgb(187, 184, 184);
+}
+
+/* --------------------------------------- MEDIA QUERYS --------------------------------------- */
+
+@media (max-width:768px){
+
+    body, html{
+        height: 100%;
+    }
+    
+    body{
+        background-size: auto !important;
+    }
+ 
+    .contenedor{
+    width: 100%;   
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+        
+    /* article{
+    width: 100%;
+    margin-top: 80px;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    } */
+
+    h1{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+
+@media (max-width:965px){
+    .nav-link{
+        width: 100%;
+    }
+}

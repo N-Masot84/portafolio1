@@ -1,0 +1,79 @@
+@font-face{
+    font-family: Funera;
+    src: url("/fonts/MCFfunera.ttf");
+}
+
+/* body, html{
+    height: 100%;
+} */
+
+body{
+    background-color: black;
+    background-image: url(/imagenes/tslfx.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y:center;
+}
+
+h1{
+font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.navbar{
+    opacity: 0.5;
+    
+}
+
+.nav-link{
+    color: white;
+    
+
+}
+
+a{
+    font-family: Funera, serif;
+    font-size: 92px;
+}
+
+.card{
+    background-color: grey;
+    opacity: 0.8;
+    padding: 2px;
+    min-width: 250px;
+    margin:12px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-fluid{
+    flex-direction: row;
+}
+
+.redsocial i {
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 33.3%;
+    border: 1px solid;
+    font-size: 2rem;
+    transition: all 0.7s;
+}
+
+.redsocial i:hover {
+    color: white;
+    background-color: black;
+}
+
+#copyright {
+    color: grey;
+}
+

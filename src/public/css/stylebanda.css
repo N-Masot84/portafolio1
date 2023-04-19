@@ -1,0 +1,109 @@
+/* <!----------------------------------------- Custom Fonts ----------------------------------------------- > */
+@font-face{
+    font-family: Funera;
+    src: url("/fonts/MCFfunera.ttf");
+}
+
+@font-face{
+    font-family: Yataghan; 
+    src: url("/fonts/Yataghan-Regular.otf");
+}
+
+@font-face {
+    font-family: Wretched;
+    src: url("/fonts/WRETRG_.TTF");
+}
+
+@font-face {
+    font-family: Gothique;
+    src: url("/fonts/A Gothique Time.TTF");
+}
+
+body{
+    background-image: url(/imagenes/imgcabecera.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y:center;
+}
+
+#yo1, #yo2{
+    opacity: 0.7;
+    
+}
+
+.navbar{
+    opacity: 0.5;
+   
+}
+
+.nav-link{
+    color: white;
+
+}
+
+a{
+    font-family: Funera, serif;
+    font-size: 92px;
+}
+
+h1{
+    color: white;
+    font-family: Wretched, serif;
+}
+
+#parrafobiografia{
+    text-shadow: 1px 2px 2px black;
+    color: whitesmoke;
+    font-size: 28px;
+    font-family: Wretched, serif;
+}
+
+.redsocial i {
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 33.3%;
+    border: 1px solid;
+    font-size: 2rem;
+    transition: all 0.7s;
+}
+
+.redsocial i:hover {
+    color: darkgoldenrod;
+    background-color: black;
+}
+
+#copyright {
+    color: grey;
+}
+
+
+/* --------------------------------------------------------  Media Querys -------------------------------------- */
+
+@media (max-width:999px){
+    
+    .foto{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .biografia-banda{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+
+    p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+
+}
