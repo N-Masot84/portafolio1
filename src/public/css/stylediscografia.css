@@ -25,14 +25,11 @@ h2{
 }
 
 .navbar{
-    opacity: 0.5;
-    
+    opacity: 0.5; 
 }
 
 .nav-link{
     color: white;
-    
-
 }
 
 a{

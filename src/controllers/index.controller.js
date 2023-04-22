@@ -1,5 +1,5 @@
-import config from "../config.js";
-import fs from "fs";
+// import config from "../config.js";
+// import fs from "fs";
 
 // render de rutas
 export const renderIndexPage = (req, res) => res.render("index", );
@@ -8,6 +8,6 @@ export const renderDiscografiaPage = (req, res) => res.render("discografia", );
 export const renderMerchPage = (req, res) => res.render("merch", );
 export const renderContactoPage = (req, res) => res.render("contacto", );
 
-
+export const renderApiProductos = (req, res) => res.render("apiproductos", );
 
 

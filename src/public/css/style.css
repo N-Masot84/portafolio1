@@ -19,7 +19,6 @@ body{
     background-color: black;
     margin-left: 1px;
     margin-right: 1px;
-
 }
 
 .bgindex{
@@ -37,51 +36,21 @@ body{
 a{
     font-family: Funera, serif;
     font-size: 98px;
-    
 }
 
 h1{
     font-family: Wretched, serif;
     font-size: 40px;
     color: whitesmoke;
-
-    }
+}
 
 h2{
     font-size: 20px;
-    }
-
-.contenedor{
-    width: 100%;   
-    margin: 5px;
-    margin-bottom: 10px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    margin-top: 70px;
-}
-
-article{
-    width: 100%;
-    padding: 20px;
-    font-family: 'Cinzel', serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    
-       
 }
 
 #articulos{
     opacity: 0.65;
 }
-
-/* iframe {
-    opacity: 0.5;
-} */
 
 .redsocial i {
     color: grey;
@@ -105,49 +74,59 @@ article{
     color: rgb(187, 184, 184);
 }
 
-/* --------------------------------------- MEDIA QUERYS --------------------------------------- */
+/* iframe {
+    opacity: 0.5;
+} */
 
-@media (max-width:768px){
-
-    body, html{
-        height: 100%;
-    }
+    /* .contenedor{
+        width: 100%;   
+        margin: 5px;
+        margin-bottom: 10px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-top: 70px;
+    } */
     
-    body{
-        background-size: auto !important;
-    }
- 
-    .contenedor{
-    width: 100%;   
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-        
     /* article{
-    width: 100%;
-    margin-top: 80px;
-    font-family: 'Cinzel', serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+        width: 100%;
+        padding: 20px;
+        font-family: 'Cinzel', serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
     } */
 
-    h1{
-    width: 100%;
-    flex-direction: column;
+
+/* --------------------------------------- MEDIA QUERYS --------------------------------------- */
+
+@media (max-width:999px){
+
+body, html{
+    height: 100%;
+}
+    
+body{
+    background-size: auto !important;
+}
+
+#articulos{
+    width: 100%;   
+    margin-bottom: 10px;
+    display: row;
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
-    }
-
 }
 
-@media (max-width:965px){
-    .nav-link{
-        width: 100%;
-    }
+h1{
+width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
+}
+
