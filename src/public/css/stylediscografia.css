@@ -3,10 +3,6 @@
     src: url("/fonts/MCFfunera.ttf");
 }
 
-/* body, html{
-    height: 100%;
-} */
-
 body{
     background-color: black;
     background-image: url(/imagenes/tslfx.jpg);

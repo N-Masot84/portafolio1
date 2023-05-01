@@ -3,10 +3,6 @@
     src: url("/fonts/MCFfunera.ttf");
 }
 
-/* body, html{
-    height: 100%;
-} */
-
 body{
     background-color: rgba(0, 0, 0, 0.921);
     background-position: center;

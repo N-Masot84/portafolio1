@@ -5,73 +5,70 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mantenedor</title>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-            />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     </head>
     <body>
 
-        <nav> <a href="/api/productos">Home</a> </nav>
+<nav> <a href="/">Home</a> </nav>
 
-        <table>
-            <tr>
-                <th>id</th>
-                <th>Nombre</th>
-                <th>Categoría</th>
-                <th>Talla</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-            </tr>
-            <tr>
-                <form id="formulario" action="/api/productos" method="POST">
-                    <td></td>
-                    <td><input type="text" id="in_nombre" name="nombre" placeholder="Nombre"></td>
-                    <td><input type="text" id="in_categoria" name="categoria" placeholder="Categoria"></td>
-                    <td><input type="text" id="in_talla" name="talla" placeholder="Talla"></td>
-                    <td><input type="text" id="in_precio" name="precio" placeholder="Precio"></td>
-                    <td><input type="text" id="in_cantidad" name="cantidad" placeholder="Cantidad"></td>
-                    <td>
-                        <button id="btn_add"><span class="material-symbols-outlined">add</span></button>
-                        <button id="btn_edit" hidden><span class="material-symbols-outlined">edit</span></button>
-                    </td>
-                </form>
-            </tr>
+<table>
+    <tr>
+        <th>id</th>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Talla</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+    </tr>  
+    <tr>
+        <form id="formulario" action="/productos/update/" method="POST">
+            <td></td>
+            <td><input type="text" id="in_nombre" name="nombre" placeholder="Nombre"></td>
+            <td><input type="text" id="in_categoria" name="categoria" placeholder="Categoria"></td>
+            <td><input type="text" id="in_talla" name="talla" placeholder="Talla"></td>
+            <td><input type="text" id="in_precio" name="precio" placeholder="Precio"></td>
+            <td><input type="text" id="in_cantidad" name="cantidad" placeholder="Cantidad"></td>
+            <td>
+                <button id="btn_add"><span class="material-symbols-outlined">add</span></button>
+                <button id="btn_edit" hidden><span class="material-symbols-outlined">edit</span></button>
+            </td>
+        </form>
+    </tr>
             
             <% productos.forEach(function(merch) { %>
             <tr id="tr-<%= merch.id %>">
-                <td><%= merch.id %></td>
-                <td><%= merch.nombre %></td>
                 <td><%= merch.categoria %></td>
                 <td><%= merch.talla %></td>
                 <td><%= merch.precio %></td>
                 <td><%= merch.cantidad %></td>
+                <td><%= merch.nombre %></td>
+                <td><%= merch.id %></td>
 
-                <td><a href="#" onclick="editar(<%= merch.id %>)"><span class="material-symbols-outlined">edit</span></a></td>
-                <td><a href="/mantenedor/<%= merch.id %>?_method=delete"><span class="material-symbols-outlined">delete</span></a></td>
+                <td><a href="#" onclick="editar('<%= merch.id %>')"><span class="material-symbols-outlined">edit</span></a></td>
+                <td><a href="/api/productos/<%= merch.id %>?_method=delete"><span class="material-symbols-outlined">delete</span></a></td>
             </tr>
             <% }); %>
-        </table>
+</table>
 
-        <script>
-            function editar(id){
-                const tr = document.getElementById(`tr-${id}`);
-                const td_nombre= tr.children[1].textContent;
-                const td_categoria= tr.children[2].textContent;
-                const td_talla= tr.children[3].textContent;
-                const td_precio= tr.children[4].textContent;
-                const td_cantidad= tr.children[5].textContent;
-                document.getElementById("in_nombre").value= td_nombre;
-                document.getElementById("in_categoria").value= td_categoria;
-                document.getElementById("in_talla").value= td_talla;
-                document.getElementById("in_precio").value= td_precio;
-                document.getElementById("in_cantidad").value= td_cantidad;
-                document.getElementById("btn_add").hidden =true;
-                document.getElementById("btn_edit").hidden =false;
-                const form = document.getElementById("formulario");
-                form.action = `/mantenedor/${id}?_method=put`
-                console.dir(form)
-            }
-        </script>
-    </body>
-    
+    <script>
+        function editar(id){
+            const tr = document.getElementById(`tr-${id}`);
+            const td_nombre= tr.children[1].textContent;
+            const td_categoria= tr.children[2].textContent;
+            const td_talla= tr.children[3].textContent;
+            const td_precio= tr.children[4].textContent;
+            const td_cantidad= tr.children[5].textContent;
+            document.getElementById("in_nombre").value= td_nombre;
+            document.getElementById("in_categoria").value= td_categoria;
+            document.getElementById("in_talla").value= td_talla;
+            document.getElementById("in_precio").value= td_precio;
+            document.getElementById("in_cantidad").value= td_cantidad;
+            document.getElementById("btn_add").hidden =true;
+            document.getElementById("btn_edit").hidden =false;
+            const form = document.getElementById("formulario");
+            form.action = `/mantenedor/${id}?_method=put`
+            console.dir(form)
+        }
+    </script>
+</body>
 </html>

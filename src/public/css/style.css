@@ -10,10 +10,6 @@
     src: url("../fonts/WRETRG_.TTF");
 }
 
-/* body, html{
-    height: 100%;
-    
-} */
 
 body{
     background-color: black;
@@ -74,50 +70,20 @@ h2{
     color: rgb(187, 184, 184);
 }
 
-/* iframe {
-    opacity: 0.5;
-} */
-
-    /* .contenedor{
-        width: 100%;   
-        margin: 5px;
-        margin-bottom: 10px;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        margin-top: 70px;
-    } */
-    
-    /* article{
-        width: 100%;
-        padding: 20px;
-        font-family: 'Cinzel', serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-    } */
-
 
 /* --------------------------------------- MEDIA QUERYS --------------------------------------- */
 
 @media (max-width:999px){
 
-body, html{
-    height: 100%;
-}
-    
+
 body{
     background-size: auto !important;
 }
 
-#articulos{
-    width: 100%;   
+#articulos{  
     margin-bottom: 10px;
-    display: row;
-    flex-direction: row; 
+    display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
@@ -127,6 +93,4 @@ width: 100%;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-}
-}
-
+}}
